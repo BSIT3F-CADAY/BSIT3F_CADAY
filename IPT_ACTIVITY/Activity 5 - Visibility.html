@@ -1,0 +1,33 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #text {
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <p id="text">This is the Paragraph.<br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nobis vero exercitationem nulla alias omnis quisquam odio nam, doloremque, nostrum officia reprehenderit a ipsum inventore? Ipsa consequuntur consequatur at sunt?
+    </p>
+
+    <button onclick="toggleVisibility()">Toggle</button>
+
+    <script>
+     
+        function toggleVisibility() {
+            const textElement = document.getElementById('text');
+           
+            if (textElement.style.display === 'none') {
+                textElement.style.display = 'block';
+            } else {
+                textElement.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
